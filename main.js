@@ -1,13 +1,13 @@
 // www.codewars.com
 // KATA 1 7kyu
-const removeUrlAnchor = str => str.split('#')[0]
+const removeUrlAnchor = str => str.split('#')[0];
 
 console.log(removeUrlAnchor('www.codewars.com/katas/?page=1#about'));
 
 // KATA 2 7kyu
 const sumDigits = num => 
   String(Math.abs(num)).split('')
-    .reduce((acc, digit) => acc + digit, 0)
+    .reduce((acc, digit) => acc + digit, 0);
 
 console.log(sumDigits(-32));
 
@@ -17,7 +17,7 @@ const alphabetPosition= str =>  str.replace(/[^a-zA-Z]/g, '').toUpperCase().spli
 console.log(alphabetPosition("The sunset sets at twelve o' clock."));
 
 // KATA 4 7kyu
-const number = array => array.map((letter, index) => `${index + 1}: ${letter}`)
+const number = array => array.map((letter, index) => `${index + 1}: ${letter}`);
 
 console.log(number(["a", "b", "c"] ));
 
